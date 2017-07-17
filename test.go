@@ -20,7 +20,6 @@ func main() {
 	*/
 
 	bc := make(chan bool)
-
 	go func() {
 		select {
 		case <-bc:
@@ -32,5 +31,4 @@ func main() {
 	bc <- true
 	<-bc
 	fmt.Println("END")
-
 }
