@@ -32,5 +32,4 @@ func main() {
 	<-bc
 	fmt.Println("END")
 	//comment on branch dev
-	//conflict master
 }
