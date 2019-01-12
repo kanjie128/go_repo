@@ -8,16 +8,6 @@ func doSleep() {
 	time.Sleep(time.Duration(3) * time.Second)
 }
 func main() {
-	/*
-		t := time.NewTicker(time.Duration(10) * time.Millisecond)
-		for {
-			//t := time.After(time.Duration(10) * time.Millisecond)
-			select {
-			case <-t.C:
-				doSleep()
-			}
-		}
-	*/
 
 	bc := make(chan bool)
 	go func() {
